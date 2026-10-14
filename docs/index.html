@@ -57,7 +57,7 @@
         <a class="btn" href="https://github.com/MrLouisWright/answer-beacon">Source on GitHub</a>
       </div>
       <div class="badges">
-        <a href="https://github.com/MrLouisWright/answer-beacon/pkgs/npm/answer-beacon"><img src="https://img.shields.io/badge/GitHub%20Packages-%40mrlouiswright%2Fanswer-beacon-24292f?style=flat-square&amp;logo=github" alt="GitHub Packages: @mrlouiswright/answer-beacon" height="20"></a><a href="https://github.com/MrLouisWright/answer-beacon/releases"><img src="https://img.shields.io/github/v/tag/MrLouisWright/answer-beacon?style=flat-square&amp;label=version" alt="Latest version tag" height="20"></a>
+        <a href="https://github.com/MrLouisWright/answer-beacon/pkgs/npm/answer-beacon"><img src="https://img.shields.io/badge/GitHub%20Packages-%40mrlouiswright%2Fanswer--beacon-24292f?style=flat-square&amp;logo=github" alt="GitHub Packages: @mrlouiswright/answer-beacon" height="20"></a><a href="https://github.com/MrLouisWright/answer-beacon/releases"><img src="https://img.shields.io/github/v/tag/MrLouisWright/answer-beacon?style=flat-square&amp;label=version" alt="Latest version tag" height="20"></a>
         <a href="https://github.com/MrLouisWright/answer-beacon/actions/workflows/ci.yml"><img src="https://img.shields.io/github/actions/workflow/status/MrLouisWright/answer-beacon/ci.yml?branch=main&amp;style=flat-square&amp;label=CI" alt="CI status" height="20"></a>
         <a href="https://github.com/MrLouisWright/answer-beacon/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square" alt="License: MIT" height="20"></a>
         <a href="https://github.com/MrLouisWright/answer-beacon"><img src="https://img.shields.io/github/stars/MrLouisWright/answer-beacon?style=flat-square" alt="GitHub stars for answer-beacon" height="20"></a>
@@ -74,8 +74,8 @@
 <section class="sec" id="problem">
   <div class="wrap narrow">
     <h2><span class="h-idx">01</span> Why it exists</h2>
-    <p class="big">Answer engines (ChatGPT search, Perplexity, Claude, Google AI Overviews) quote pages that answer a question in the first sentence, mark it up, let their crawlers in and show who wrote it and when. Sites lose that in small ways: a blanket User-agent: * Disallow: / that also blocks GPTBot, FAQ schema whose questions are not on the page, a question heading followed by a 200-word preamble, an llms.txt with broken links. answer-beacon reads the build, robots.txt and llms.txt and reports each gap with the file, line, severity and a concrete fix.</p>
-    <p class="big">CLI, library and GitHub Action. Node.js 18+, zero runtime dependencies. Works on any static build output (Astro, Next.js output: 'export', Eleventy, Hugo, Jekyll, Docusaurus, VitePress, plain HTML) and runs offline: point it at the folder your build writes. By Louis Wright.</p>
+    <p class="big">Answer engines (ChatGPT search, Perplexity, Claude, Google AI Overviews) quote pages that answer a question in the first sentence, mark it up, let their crawlers in and show who wrote it and when. Sites lose that in small ways: a blanket “User-agent: * Disallow: /” that also blocks GPTBot, FAQ schema whose questions are not on the page, a question heading followed by a 200-word preamble, an llms.txt with broken links. answer-beacon reads the build, robots.txt and llms.txt and reports each gap with the file, line, severity and a concrete fix.</p>
+    <p class="big">CLI, library and GitHub Action. Node.js 18+, zero runtime dependencies. Works on any static build output (Astro, Next.js “output: 'export'”, Eleventy, Hugo, Jekyll, Docusaurus, VitePress, plain HTML) and runs offline: point it at the folder your build writes. By Louis Wright.</p>
   </div>
 </section>
 
