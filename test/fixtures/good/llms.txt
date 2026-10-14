@@ -1,0 +1,8 @@
+# Acme
+
+> Hand-made widgets.
+
+## Pages
+
+- [FAQ](https://example.com/faq.html): common questions
+- [About](/about.html)

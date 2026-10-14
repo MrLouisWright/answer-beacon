@@ -1,0 +1,54 @@
+{
+  "name": "answer-beacon",
+  "version": "1.0.0",
+  "description": "Check your built static site is ready for answer engines (AEO): question headings with concise direct answers, FAQPage/QAPage/HowTo schema, llms.txt, AI crawler rules in robots.txt (GPTBot, ClaudeBot, PerplexityBot, Google-Extended) and meta tags, and author/date E-E-A-T signals. SARIF, allowlist, GitHub Action. Zero deps.",
+  "type": "module",
+  "main": "./src/index.js",
+  "types": "./src/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./src/index.d.ts",
+      "default": "./src/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "bin": {
+    "answer-beacon": "bin/answer-beacon.js"
+  },
+  "files": [
+    "src",
+    "bin",
+    "action.yml",
+    "README.md",
+    "CHANGELOG.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "test": "node --test test/*.test.js"
+  },
+  "keywords": [
+    "aeo",
+    "answer-engine-optimization",
+    "llms-txt",
+    "faq-schema",
+    "gptbot",
+    "ai-crawlers",
+    "eeat",
+    "seo",
+    "sarif",
+    "github-action"
+  ],
+  "author": "Louis Wright <hello@louiswright.co.uk> (https://github.com/MrLouisWright)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MrLouisWright/answer-beacon.git"
+  },
+  "bugs": {
+    "url": "https://github.com/MrLouisWright/answer-beacon/issues"
+  },
+  "homepage": "https://github.com/MrLouisWright/answer-beacon#readme"
+}
