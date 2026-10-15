@@ -1,5 +1,7 @@
 # answer-beacon
 
+[![npm version](https://img.shields.io/npm/v/answer-beacon.svg)](https://www.npmjs.com/package/answer-beacon) [![CI](https://github.com/MrLouisWright/answer-beacon/actions/workflows/ci.yml/badge.svg)](https://github.com/MrLouisWright/answer-beacon/actions/workflows/ci.yml) [![Node](https://img.shields.io/node/v/answer-beacon.svg)](https://nodejs.org) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
 > Check that your built static site is ready for answer engines and AI search: direct answers, FAQ schema, llms.txt, AI crawler access and E-E-A-T signals.
 
 Answer engines (ChatGPT search, Perplexity, Claude, Google AI Overviews) quote pages that answer a question in the first sentence, mark it up, let their crawlers in and show who wrote it and when. Sites lose that in small ways: a blanket `User-agent: * Disallow: /` that also blocks GPTBot, FAQ schema whose questions are not on the page, a question heading followed by a 200-word preamble, an `llms.txt` with broken links. `answer-beacon` reads the build, robots.txt and llms.txt and reports each gap with the file, line, severity and a **concrete fix**.
