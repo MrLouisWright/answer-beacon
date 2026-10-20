@@ -1,6 +1,6 @@
 {
   "name": "answer-beacon",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Check your built static site is ready for answer engines (AEO): question headings with concise direct answers, FAQPage/QAPage/HowTo schema, llms.txt, AI crawler rules in robots.txt (GPTBot, ClaudeBot, PerplexityBot, Google-Extended) and meta tags, and author/date E-E-A-T signals. SARIF, allowlist, GitHub Action. Zero deps.",
   "type": "module",
   "main": "./src/index.js",
