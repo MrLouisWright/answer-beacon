@@ -75,7 +75,7 @@ HIGH     robots.txt robots.txt blocks ChatGPT-User from / (via User-agent: *) [a
 ## Options
 
 ```text
-answer-beacon 1.0.0 — check your built static site is ready for answer engines and AI search
+answer-beacon 1.0.1 — check your built static site is ready for answer engines and AI search
 
 Usage: answer-beacon [site-dir] [options]
 
@@ -186,11 +186,19 @@ The action runs the bundled CLI with Node 20; it has no dependencies to install.
 
 ## Library
 
+Install it in your project first:
+
+```bash
+npm install --save-dev answer-beacon
+```
+
 ```js
 import { check, parseRobots, robotsAllows, parseLlmsTxt } from "answer-beacon";
 const report = check("dist", { blockBots: ["CCBot"] });
 robotsAllows(parseRobots(txt), "GPTBot", "/"); // { allowed, explicit }
 ```
+
+The package is ESM-only (there is no CommonJS build): use `import`, or `await import("answer-beacon")` from CommonJS.
 
 Types are included.
 
